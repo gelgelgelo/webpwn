@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Login to Webpwn</title>
+		<link rel="stylesheet" href="login.css">
+	</head>
+
+	<body>
+		<main>
+			<section>
+				<form action="login.php" method="POST">
+					<h2>Login to Webpwn</h2>
+					<input type="text" id="username" name="username" placeholder="Username">
+					<br>
+					<input type="password" id="password" name="password" placeholder="Password">
+					<br>
+					<p id="err" style="display: none; color: red;">Invalid username or password</p>
+					<br>
+					<button type="submit" name="submit"><b>Login</b></button>
+					<br>
+					<p>Don't have a account yet? signup <a href="../signup/signup.html">here</a></p>
+				</form>
+			</section>
+		</main>
+		<script>
+			const urlparameters = new URLSearchParams(window.location.search);
+			if (urlparameters.get('error') === 'invalid') {
+				const errElem = document.getElementById('err');
+				errElem.style.display = 'block';
+			}
+		</script>
+	</body>
+</html>
+
