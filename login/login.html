@@ -4,6 +4,7 @@
 	<head>
 		<title>Login to Webpwn</title>
 		<link rel="stylesheet" href="login.css">
+		<script src="login.js" defer></script>
 	</head>
 
 	<body>
@@ -23,13 +24,6 @@
 				</form>
 			</section>
 		</main>
-		<script>
-			const urlparameters = new URLSearchParams(window.location.search);
-			if (urlparameters.get('error') === 'invalid') {
-				const errElem = document.getElementById('err');
-				errElem.style.display = 'block';
-			}
-		</script>
 	</body>
 </html>
 

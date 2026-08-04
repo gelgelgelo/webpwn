@@ -4,6 +4,7 @@
 	<head>
 		<title>Signup to Webpwn</title>
 		<link rel="stylesheet" href="signup.css">
+		<script src="signup.js" defer></script>
 	</head>
 
 	<body>
@@ -15,7 +16,11 @@
 					<br>
 					<input type="password" id="password" name="password" placeholder="Password">
 					<br>
+					<p id="err" style="display: none; color: red;">No username or password provided</p>
+					<br>
 					<button type="submit" name="submit"><b>Signup</b></button>
+					<br>
+					<p>Already have a account? login <a href="../login/login.html">here</a></p>
 				</form>
 			</section>
 		</main>
