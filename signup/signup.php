@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
 		$result = mysqli_query($conn, $sql);
 
 		if ($result) {
-			header("Location: ../login/login.html");
+			header("Location: getinfo/getinfo.html");
 			exit();
 		}
 		else {

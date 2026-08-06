@@ -10,7 +10,7 @@ if (!isset($_SESSION['username'])) {
 <html>
 
 <head>
-	<title>Webpwn | Dashboard</title>
+	<title>Profile | Webpwn</title>
 </head>
 
 <body>

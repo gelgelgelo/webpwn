@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
 	if ($result && mysqli_num_rows($result) > 0) {
 		session_start();
 		$_SESSION['username'] = $username;
-		header("Location: ../dashboard/dashboard.php");	
+		header("Location: ../profile/profile.php");	
 		exit();
 	}
 	else {
